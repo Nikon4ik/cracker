@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="first_header">
+			<div class="container">
+				<div id="cart">
+					<img src="images/semen.png" alt="cart">
+				</div>
+				<div class="cost">
+					<p>total: <span>143 €</span></p>
+				</div>
+				<div class="details">
+					<p>details</p>
+					<img src="images/arrow_down.svg" alt="arrow_down">
+				</div>
+				<div class="open_details">
+					<div class="headline">
+						<img src="images/ingredient_1.svg" alt="ingredient_1">
+						<img src="images/ingredient_2.svg" alt="ingredient_2">
+						<img src="images/ingredient_3.svg" alt="ingredient_3">
+						<img src="images/ingredient_4.svg" alt="ingredient_4">
+					</div>
+					<div class="ingredients">
+						<div class="row">
+							<img src="images/semen_black.svg" alt="semen_black">
+							<div class="item">
+								<div class="amount">
+									<span>4%</span>
+									<span>15%</span>
+									<span>61%</span>
+									<span>20%</span>
+								</div>
+								<span>150 kg</span>
+								<span>81.50 €</span>
+							</div>
+							<img src="images/close.svg" alt="close">
+						</div>
+						<div class="row">
+							<img src="images/semen_black.svg" alt="semen_black">
+							<div class="item">
+								<div class="amount">
+									<span>14%</span>
+									<span>19%</span>
+									<span>51%</span>
+									<span>16%</span>
+								</div>
+								<span>0.50 kg</span>
+								<span>28.50 €</span>
+							</div>
+							<img src="images/close.svg" alt="close">
+						</div>
+						<div class="row">
+							<img src="images/semen_black.svg" alt="semen_black">
+							<div class="item">
+								<div class="amount">
+									<span>5%</span>
+									<span>14%</span>
+									<span>65%</span>
+									<span>16%</span>
+								</div>
+								<span>0.66 kg</span>
+								<span>33.00 €</span>
+							</div>
+							<img src="images/close.svg" alt="close">
+						</div>
+					</div>
+					<div class="bottom_row">
+						<p>total: <span>143 €</span></p>
+						<button>checkout</button>
+					</div>
+					<i class="fas fa-times"></i>
+				</div>
+			</div>
+		</div>
+		<div class="second_header">
+			<div class="container">
+				<div class="logo">
+					<span>Cracker</span>
+				</div>
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a href="#">about us</a></li>
+					<li><a href="#">contacts</a></li>
+					<li><a href="#">checkout</a></li>
+					<li><a href="#">account</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section id="first_screen">
+		<div class="container">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Lorem ipsum dolor sit amet,
+			</p>
+			<h2>
+				mostly tastes <br>with freshes
+			</h2>
+			<button>
+				taste it
+			</button>
+		</div>
+	</section>
+	<section id="second_screen">
+		<img src="images/mask.png" alt="mask">
+		<div class="container">
+			<div class="about_cracker">
+				<h2>about cracker</h2>
+				<img src="images/crackers.png" alt="crackers">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, architecto beatae vitae dicta sunt explicabo. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+				</p>
+			</div>
+			<div class="cracker_constructor">
+				<h2>cracker constructor</h2>
+				<p>current value: <span>143 €</span></p>
+				<div class="sliders">
+					<div class="item">
+						<img src="images/soybean.svg" alt="soybean">
+						<input id="slider_1" type="range" min="0" max="100" value="30" name="range" step="1"/>
+						<span id="amount_1"></span>
+					</div>
+					<div class="item">
+						<img src="images/sesame.svg" alt="sesame">
+						<input id="slider_2" type="range" min="0" max="100" value="30" name="range" step="1"/>
+						<span id="amount_2"></span>
+					</div>
+					<div class="item">
+						<img src="images/wheat.svg" alt="wheat">
+						<input id="slider_3" type="range" min="0" max="100" value="30" name="range" step="1"/>
+						<span id="amount_3"></span>
+					</div>
+					<div class="item">
+						<img src="images/corn.svg" alt="corn">
+						<input id="slider_4" type="range" min="0" max="100" name="range" step="1" disabled/>
+						<span id="amount_4"></span>
+					</div>
+					<div class="item select">
+						<img src="images/pacage.svg" alt="pacage">
+						<div class="select-box">
+							<div class="select-box__current" tabindex="1">
+							<div class="select-box__value">
+								<input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked" disabled/>
+								<p class="select-box__input-text">CHOOSE YOUR PACK</p>
+							</div>
+							<div class="select-box__value">
+								<input class="select-box__input" type="radio" id="1" value="2" name="Ben"/>
+								<p class="select-box__input-text">SMALL PACK</p>
+							</div>
+							<div class="select-box__value">
+								<input class="select-box__input" type="radio" id="2" value="3" name="Ben"/>
+								<p class="select-box__input-text">MEDIUM PACK</p>
+							</div>
+							<div class="select-box__value">
+								<input class="select-box__input" type="radio" id="3" value="4" name="Ben"/>
+								<p class="select-box__input-text">LARGE PACK</p>
+							</div>
+							<i class="fa fa-angle-down select-box__icon"></i>
+							</div>
+							<ul class="select-box__list">
+								<li>
+									<label class="select-box__option" for="0" aria-hidden="aria-hidden" disabled>CHOOSE YOUR PACK</label>
+								</li>
+								<li>
+									<label class="select-box__option" for="1" aria-hidden="aria-hidden">SMALL PACK</label>
+								</li>
+								<li>
+									<label class="select-box__option" for="2" aria-hidden="aria-hidden">MEDIUM PACK</label>
+								</li>
+								<li>
+									<label class="select-box__option" for="3" aria-hidden="aria-hidden">LARGE PACK</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<button class="add_to_cart">
+					<img src="images/shape.svg" alt="shape">
+					<p class="add_text">add to cart</p>
+				</button>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="phone">
+				<i class="fa fa-phone"></i>
+				<h4>phone</h4>
+				<a href="tel:+43987345678">+43 ( 987 ) 345 - 6782</a>
+			</div>
+			<div class="address">
+				<i class="fas fa-map-marker-alt"></i>
+				<h4>address</h4>
+				<p>Cracker Inc. <br>10 Cloverfield Lane <br>Berlin, IL 10928 <br>Germany</p>
+			</div>
+			<div class="share_us">
+				<i class="fa fa-share-alt"></i>
+				<h4>share us</h4>
+				<a href="https://www.pinterest.com/" target="_blank" class="first_link">
+					<img src="images/pinterest.svg" alt="pinterest">
+					https://www.pinterest.com/
+				</a>
+				<a href="https://www.facebook.com/" target="_blank">
+					<img src="images/facebook.svg" alt="facebook">
+					https://www.facebook.com/
+				</a>
+				<a href="https://www.google.com/" target="_blank">
+					<img src="images/google.svg" alt="google">
+					https://www.google.com/
+				</a>
+			</div>
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>
